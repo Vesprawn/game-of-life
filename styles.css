@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/NunitoSans-Regular.ttf");
+  }
+
+body {
+  font-family: Nunito,sans-serif;
+}
+
+#grid {
+  border: 1px solid #bbb;
+}
+
+.stats {
+  padding: 0.5em 0;
+}
+
+.stat {
+  margin-right: 1em;
+}
+
+#about ul {
+  padding: 0;
+}
+
+#about ul li {
+  list-style-type: none;
+  margin: 0.5em 0;
+}
+
+@media only screen and (min-width: 850px) {
+  #grid-wrapper {
+    width: 450px;
+    float: left;
+  }
+
+  #about {
+    float: left;
+    width: 350px;
+    padding: 1em;
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header"><h1>Game of Life</h1></div>
+    <div id="grid-wrapper">
+      <div class="stats">
+        <span id="generations" class="stat">0</span>
+        <span id="total-deaths" class="stat">0</span>
+        <span id="total-births" class="stat">0</span>
+      </div>
+
+      <canvas id="grid"></canvas>
+    </div>
+
+    <div id="about">
+      <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life</a>
+      <h2>Rules</h2>
+      <ul>
+        <li>A neighbour is defined as the up to 8 cells surrounding a cell.</li>
+        <li>Any live cell survives if it has 2 or 3 neighbours.</li>
+        <li>Any dead cell with exactly 3 neighbours becomes a live cell.</li>
+        <li>All other cells die or remain dead.</li>
+        <li>Simulation ends when population stabalises or is wiped out.</li>
+        <li>There is a chance of occilasion where simulation will run forever.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
